@@ -89,7 +89,7 @@ const objectHandler = {
  */
 const classHandler = Object.assign({}, objectHandler, {
   construct (target, ...args) {
-    return callTrap(target, 'construct', args)
+    return callTrap(target, 'construct', ...args)
   },
 })
 
