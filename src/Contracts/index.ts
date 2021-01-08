@@ -215,12 +215,12 @@ export interface IocContract<ContainerBindings extends any = any> {
 	 * require('../models/foo')
 	 * ```
 	 *
-	 * ### With outoload
+	 * ### With autoload
 	 * ```
 	 * ioc.alias(join(__dirname, 'app'), 'App')
 	 *
 	 * ioc.use('App/services/foo')
-	 * ioc.use('App/mdoels/foo')
+	 * ioc.use('App/models/foo')
 	 * ```
 	 */
 	alias(directoryPath: string, alias: string): this
